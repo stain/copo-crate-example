@@ -18,6 +18,14 @@
     {
       "@id": "https://copo-project.org/api/manifest/1a082548-ffaf-437a-9c92-6ea0d17cc9dc",
       "@type": "Dataset",
+      "dateCreated": "2022-05-07T10:54:45+00:00",
+      "dateModified": "2022-05-23T15:22:30+00:00",
+      "author": {
+        "@id": "#*****@linacre.ox.ac.uk"
+      },
+      "contributor": [
+        {"@id": "#****@sanger.ac.uk"}
+      ],
       "hasPart": [
         {
           "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb40"
@@ -34,7 +42,31 @@
         {
           "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb44"
         }
-      ]
+      ],
+      "about": {
+        "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121"
+      }
+    },
+    {
+      "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121",
+      "@type": "Taxon",
+      "name": "DILOPHUS FEBRILIS",
+      "parentTaxon": {
+        "@id": "https://copo-project.org/api/sample/sample_field/ORDER_OR_GROUP/DIPTERA"
+      }
+    },
+    {
+      "@id": "#*****@linacre.ox.ac.uk",
+      "@type": "Person",
+      "name": "ROTHAMSTED",
+      "affiliation": {
+        "@id": "#ROTHAMSTED"
+      }
+    },
+    {
+      "@id": "#ROTHAMSTED",
+      "@type": "Organization",
+      "name": "ROTHAMSTED"
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb40",
