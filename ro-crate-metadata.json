@@ -87,7 +87,7 @@
       "updated_by": "https://w3id.org/ro/terms/copo#updated_by",
       "VOUCHER_ID": "https://w3id.org/ro/terms/copo#VOUCHER_ID",
       "VOUCHER_INSTITUTION": "https://w3id.org/ro/terms/copo#VOUCHER_INSTITUTION",
-      "VOUCHER_LINK": "https://w3id.org/ro/terms/copo#VOUCHER_LINK",
+      "VOUCHER_LINK": "https://w3id.org/ro/terms/copo#VOUCHER_LINK"
     }
   ],
   "@graph": [
