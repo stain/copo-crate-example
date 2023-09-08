@@ -4,7 +4,13 @@
     "https://w3id.org/ro/terms/sample",
     "https://w3id.org/ro/terms/copo",
     {"dwc":  "http://rs.tdwg.org/dwc/terms/",
-     "dwciri": "http://rs.tdwg.org/dwc/iri/" 
+     "dwciri": "http://rs.tdwg.org/dwc/iri/",
+     "BioSample": "https://bioschemas.org/BioSample",
+     "collector": "https://bioschemas.org/BioSample#collector",
+     "custodian": "https://bioschemas.org/BioSample#custodian",
+     "isControl": "https://bioschemas.org/BioSample#isControl",
+     "samplingAge": "https://bioschemas.org/BioSample#samplingAge",
+     "taxonomicRange": "http://schema.org/taxonomicRange"
     }
   ],
   "@graph": [
@@ -50,10 +56,10 @@
       ],
       "about": [
         {
-        "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121"
+          "@id": "http://identifiers.org/taxonomy:52734"
         },
         {
-          "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002122"
+          "@id": "http://identifiers.org/taxonomy:1086758"
         }
       ],
       "location": [
@@ -61,9 +67,18 @@
       ]
     },
     {
-      "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121",
+      "@id": "http://identifiers.org/taxonomy:52734",
       "@type": "Taxon",
+      "identifier": "52734",
       "name": "DILOPHUS FEBRILIS",
+      "parentTaxon": {
+        "@id": "https://copo-project.org/api/sample/sample_field/ORDER_OR_GROUP/DIPTERA"
+      }
+    },
+    {
+      "@id": "http://identifiers.org/taxonomy:1086758",
+      "@type": "Taxon",
+      "name": "DILOPHUS FEMORATUS",
       "parentTaxon": {
         "@id": "https://copo-project.org/api/sample/sample_field/ORDER_OR_GROUP/DIPTERA"
       }
@@ -90,12 +105,9 @@
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb40",
-      "@type": "Sample",
+      "@type": "BioSample",
       "identifier": {
         "@id": "https://identifiers.org/biosample:SAMEA14435802"
-      },
-      "about": {
-        "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121"
       },
       "copo_id": "62764ff5a6cfda4fe89adb40",
       "created_by": "*****@linacre.ox.ac.uk",
@@ -116,6 +128,9 @@
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
       "TAXON_ID": "52734",
+      "taxonomicRange": {
+        "@id": "http://identifiers.org/taxonomy:52734"
+      },
       "SCIENTIFIC_NAME": "DILOPHUS FEBRILIS",
       "TAXON_REMARKS": "",
       "INFRASPECIFIC_EPITHET": "",
@@ -186,7 +201,7 @@
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb41",
-      "@type": "Sample",
+      "@type": "BioSample",
       "copo_id": "62764ff5a6cfda4fe89adb41",
       "COLLECTED_BY": "ROTHAMSTED",
       "DATE_OF_COLLECTION": "2006-08-15",
@@ -199,6 +214,9 @@
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
       "TAXON_ID": "52734",
+      "taxonomicRange": {
+        "@id": "http://identifiers.org/taxonomy:52734"
+      },
       "SCIENTIFIC_NAME": "DILOPHUS FEBRILIS",
       "TAXON_REMARKS": "",
       "INFRASPECIFIC_EPITHET": "",
@@ -277,7 +295,7 @@
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb42",
-      "@type": "Sample",
+      "@type": "BioSample",
       "copo_id": "62764ff5a6cfda4fe89adb42",
       "COLLECTED_BY": "ROTHAMSTED",
       "DATE_OF_COLLECTION": "2010-05-19",
@@ -290,6 +308,9 @@
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
       "TAXON_ID": "52734",
+      "taxonomicRange": {
+        "@id": "http://identifiers.org/taxonomy:52734"
+      },
       "SCIENTIFIC_NAME": "DILOPHUS FEBRILIS",
       "TAXON_REMARKS": "",
       "INFRASPECIFIC_EPITHET": "",
@@ -367,7 +388,7 @@
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb43",
-      "@type": "Sample",
+      "@type": "BioSample",
       "copo_id": "62764ff5a6cfda4fe89adb43",
       "COLLECTED_BY": "ROTHAMSTED",
       "DATE_OF_COLLECTION": "2014-05-14",
@@ -380,6 +401,9 @@
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
       "TAXON_ID": "52734",
+      "taxonomicRange": {
+        "@id": "http://identifiers.org/taxonomy:52734"
+      },
       "SCIENTIFIC_NAME": "DILOPHUS FEBRILIS",
       "TAXON_REMARKS": "",
       "INFRASPECIFIC_EPITHET": "",
@@ -458,7 +482,7 @@
     },
     {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb44",
-      "@type": "Sample",
+      "@type": "BioSample",
       "copo_id": "62764ff5a6cfda4fe89adb44",
       "COLLECTED_BY": "ROTHAMSTED",
       "DATE_OF_COLLECTION": "2010-06-04",
@@ -471,6 +495,9 @@
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
       "TAXON_ID": "1086758",
+      "taxonomicRange": {
+        "@id": "http://identifiers.org/taxonomy:1086758"
+      },
       "SCIENTIFIC_NAME": "DILOPHUS FEMORATUS",
       "TAXON_REMARKS": "",
       "INFRASPECIFIC_EPITHET": "",
