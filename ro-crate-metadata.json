@@ -2,7 +2,10 @@
   "@context": [
     "https://w3id.org/ro/crate/1.1/context",
     "https://w3id.org/ro/terms/sample",
-    "https://w3id.org/ro/terms/copo"
+    "https://w3id.org/ro/terms/copo",
+    {"dwc":  "http://rs.tdwg.org/dwc/terms/",
+     "dwciri": "http://rs.tdwg.org/dwc/iri/" 
+    }
   ],
   "@graph": [
     {
@@ -20,9 +23,11 @@
       "@type": "Dataset",
       "dateCreated": "2022-05-07T10:54:45+00:00",
       "dateModified": "2022-05-23T15:22:30+00:00",
-      "author": {
+      "author": [
+        {
         "@id": "#*****@linacre.ox.ac.uk"
-      },
+        }
+      ],
       "contributor": [
         {"@id": "#****@sanger.ac.uk"}
       ],
@@ -43,9 +48,17 @@
           "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb44"
         }
       ],
-      "about": {
+      "about": [
+        {
         "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121"
-      }
+        },
+        {
+          "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002122"
+        }
+      ],
+      "location": [
+        {"@id": "#place1928"}
+      ]
     },
     {
       "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121",
@@ -69,8 +82,21 @@
       "name": "ROTHAMSTED"
     },
     {
+      "@id": "#place1928",      
+      "@type": "Place",
+      "name": "United Kingdom | Devon | Plymouth | Hoe Foreshore East of Lido",
+      "latitude": "50.3636389",
+      "longitude": "-4.1406111"
+    },
+    {
       "@id": "https://copo-project.org/api/sample/copo_id/62764ff5a6cfda4fe89adb40",
       "@type": "Sample",
+      "identifier": {
+        "@id": "https://identifiers.org/biosample:SAMEA14435802"
+      },
+      "about": {
+        "@id": "https://copo-project.org/api/sample/sample_field/TAXON_ID/Ox002121"
+      },
       "copo_id": "62764ff5a6cfda4fe89adb40",
       "created_by": "*****@linacre.ox.ac.uk",
       "time_created": "2022-05-07T10:54:45+00:00",
