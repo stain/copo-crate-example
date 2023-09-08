@@ -117,13 +117,20 @@
       "DATE_OF_PRESERVATION": "2015-01-01",
       "PRESERVED_BY": "ROTHAMSTED",
       "PRESERVER_AFFILIATION": "ROTHAMSTED",
+      "custodian": {
+        "@id": "..../Rothamsted"
+      },
       "COLLECTED_BY": "ROTHAMSTED",
+      "collector": {
+        "@id": "..../Rothamsted"
+      },
       "DATE_OF_COLLECTION": "2002-08-03",
       "SEX": "NOT_APPLICABLE",
       "LIFESTAGE": "ADULT",
       "IDENTIFIED_BY": "ROTHAMSTED",
       "IDENTIFIER_AFFILIATION": "ROTHAMSTED",
       "SPECIMEN_ID": "Ox002121",
+
       "ORDER_OR_GROUP": "DIPTERA",
       "FAMILY": "BIBIONIDAE",
       "GENUS": "DILOPHUS",
